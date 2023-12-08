@@ -13,9 +13,9 @@ Please provide me with details about the following:
 - What are some of the topics you plan to cover?
 - What makes your magazine unique from existing publications?
 
-# 3. Style and Tone:
+## 3. Style and Tone:
 - What kind of style and tone do you want your website to have?
 - Do you want it to be formal, informal, humorous, serious, etc.?
 - What kind of visual design are you envisioning?
 
-Once I have a better understanding of these key aspects, I can craft a more accurate and relevant description of your magazine website.
+### Once I have a better understanding of these key aspects, I can craft a more accurate and relevant description of your magazine website.
