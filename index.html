@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Magazine</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/cursor.css">
@@ -21,19 +21,59 @@
 
 <body>
     <!-- <div class="loader" id="loader"></div> -->
+
+    <!-- Navigation Bar -->
     <nav class="contain-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="navArea">
-                    <div class="logoArea"></div>
-                    <div class="navBtns"></div>
+                    <div class="container d-flex">
+                        <div class="logoArea"></div>
+                        <div class="ms-auto navBtns d-flex align-middle">
+                            <button class="navButtons">Home</button>
+                            <button class="navButtons">Science</button>
+                            <button class="navButtons">News</button>
+                            <button class="navButtons">Technology</button>
+                            <button class="navButtons">Notes</button>
+                            <button class="navButtons">Privacy Policy</button>
+                            <button class="navButtons">Contact</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!-- Image Slider -->
+    <div class="carousel-container">
+        <div class="mySlides animate">
+            <img src="./assets/images/banner1.jpg" alt="slide" />
+        </div>
+        <div class="mySlides animate">
+            <img src="./assets/images/banner2.jpg" alt="slide" />
+        </div>
+        <div class="mySlides animate">
+            <img src="./assets/images/banner3.jpg" alt="slide" />
+        </div>
+        <div class="mySlides animate">
+            <img src="./assets/images/banner4.jpg" alt="slide" />
+        </div>
+        <div class="mySlides animate">
+            <img src="./assets/images/banner5.jpg" alt="slide" />
+        </div>
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+        <div class="dots-container">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+            <span class="dots" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
 
     <script src="./assets/js/jquery-3.6.4.js"></script>
+    <script src="./assets/js/script.js"></script>
 
     <!-- JS for Loader -->
     <!-- <script type="text/javascript">
