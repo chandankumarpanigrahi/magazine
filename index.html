@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Digital Magazine</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cursor.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome 5 -->
+    <link rel='stylesheet' href='https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css'>
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
 </head>
+
 <body>
-    Hello
+    <div class="loader" id="loader"></div>
+    <nav class="contain-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="navbar">
+                    hi
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="./assets/js/jquery-3.6.4.js"></script>
+
+    <!-- JS for Loader -->
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            $(".loader").delay(0).fadeOut(100);
+        });
+    </script>
 </body>
+
 </html>
