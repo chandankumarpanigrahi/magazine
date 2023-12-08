@@ -1,0 +1,94 @@
+@media screen and (max-width: 1200px) {
+    .leftSideBar {
+        width: 0 !important;
+        display: none;
+    }
+
+    .rightWorkArea {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    .header_logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn_contact {
+        display: block;
+        text-align: center;
+        width: 110px;
+    }
+
+    .header_buttons {
+        width: 100vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .header_buttons .btn_contact {
+        display: none;
+    }
+
+    .header_logo .btn_contact {
+        display: block !important;
+        margin: 0.6rem 0;
+    }
+    footer{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .dropdown_music {
+        right: 0;
+    }
+
+    .super_heading {
+        font-size: 1.8rem;
+        text-align: left;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .audio-player .controls .name{
+        display: none;
+    }
+    .audio-player{
+        width: 210px;
+    }
+    .dropdown_music > div{
+        width: 210px;
+    }
+    .all_audio{
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .super_heading{
+        display: none;
+    }
+    .code_main h1{
+        font-size: 1.3rem;
+    }
+    .code_main h2{
+        font-size: 1.2rem;
+    }
+    .code_main p{
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+    .btn_header{
+        font-size: 1rem !important;
+    }
+    code[class*="language-"], pre[class*="language-"]{
+        font-size:0.8rem !important;
+    }
+}
