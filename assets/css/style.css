@@ -475,7 +475,7 @@ nav {
 }
 
 .freeBtn {
-    padding: 0.3rem 0.66rem;
+    padding: 0.3rem 0.63rem;
     text-decoration: none;
     color: #fff;
     background-color: #ff7a3a;
@@ -487,11 +487,12 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .freeBtn:hover {
     opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .freeBtnFake {
