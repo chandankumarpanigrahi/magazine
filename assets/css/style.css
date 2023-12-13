@@ -298,60 +298,82 @@ nav {
 }
 
 /* Datatable */
-.magazineTable table tr td{
+.magazineTable table tr td {
     height: 250px;
     padding: 0.5rem;
 }
 
-.magazineTable table tr td:first-child{
+.magazineTable table tr td:first-child {
     margin: 0.5rem 0 0.5rem 0.5rem;
     border-radius: 14px 0 0 14px;
 }
 
-.magazineTable table tr td:last-child{
+.magazineTable table tr td:last-child {
     margin: 0.5rem 0.5rem 0.5rem 0;
-    border-radius:0 14px 14px 0;
+    border-radius: 0 14px 14px 0;
+    width: 100%;
 }
 
-.magazineTable table tbody{
+.magazineTable table tbody {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-around; */
 }
 
-.magazineTable table tbody tr{
+.magazineTable table tbody tr {
     width: 50%;
     display: flex;
     flex: 0 0 auto;
+    cursor: default;
 }
 
-.magazineTable table .colorOne td{
-    background: linear-gradient(180deg, rgba(224,255,237,1) 24%, rgba(175,255,209,1) 74%);
+.active>.page-link,
+.page-link.active {
+    background: linear-gradient(119deg, #0e37e6 0%, #e60e0e 14%, #be0d2b 75%, #22099f 100%);
+    color: #fff !important;
 }
 
-.magazineTable table .colorTwo td{
-    background: linear-gradient(180deg, rgba(255,237,237,1) 24%, rgba(255,195,195,1) 74%);
+.page-link {
+    color: #ec1034 !important;
 }
 
-.magazineTable table .colorThree td{
-    background: linear-gradient(180deg, rgba(235,245,255,1) 24%, rgba(209,231,254,1) 74%);
+.page-item:last-child .page-link,
+.page-item:first-child .page-link {
+    font-weight: 500;
 }
 
-.magazineTable table .colorFour td{
-    background: linear-gradient(180deg, rgba(255,253,225,1) 24%, rgba(254,249,187,1) 74%);
+.disabled>.page-link,
+.page-link.disabled {
+    color: #212529bf !important;
+}
+
+.magazineTable table .colorOne td {
+    background: linear-gradient(180deg, rgba(224, 255, 237, 1) 24%, rgba(175, 255, 209, 1) 74%);
+}
+
+.magazineTable table .colorTwo td {
+    background: linear-gradient(180deg, rgba(255, 237, 237, 1) 24%, rgba(255, 195, 195, 1) 74%);
+}
+
+.magazineTable table .colorThree td {
+    background: linear-gradient(180deg, rgba(235, 245, 255, 1) 24%, rgba(209, 231, 254, 1) 74%);
+}
+
+.magazineTable table .colorFour td {
+    background: linear-gradient(180deg, rgba(255, 253, 225, 1) 24%, rgba(254, 249, 187, 1) 74%);
 }
 
 .magazineTable .dataTables_info {
     position: absolute;
-    top: -10px; 
+    top: -10px;
     left: 10px;
     color: #24324c;
     font-weight: 500;
     font-size: 1.1rem;
 }
 
-.magazineTable .dataTables_scrollBody{
+.magazineTable .dataTables_scrollBody {
     border-left: 0 !important;
 }
 
@@ -370,25 +392,25 @@ nav {
 }
 
 .tableBookInfo h1 {
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin-top: 0;
+    /* margin-bottom: 1rem; */
     width: 90%;
 }
 
-.colorOne  .tableBookInfo h1 {
+.colorOne .tableBookInfo h1 {
     color: #0f8542;
 }
 
-.colorTwo  .tableBookInfo h1 {
+.colorTwo .tableBookInfo h1 {
     color: #a81e1e;
 }
 
-.colorThree  .tableBookInfo h1 {
+.colorThree .tableBookInfo h1 {
     color: #1e65ae;
 }
 
-.colorFour  .tableBookInfo h1 {
+.colorFour .tableBookInfo h1 {
     color: #777000;
 }
 
@@ -396,9 +418,9 @@ nav {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
 }
 
 .tableBookTags {
@@ -414,4 +436,74 @@ nav {
     padding: 0.1rem 0.6rem;
     border-radius: 4px;
     cursor: default;
+}
+
+.tableBookDetails {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.6rem;
+}
+
+.tableBookDetails .detailBtn {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7a7a7a;
+    margin: 0.4rem 0.8rem 0.4rem 0;
+    padding-right: 0.5rem;
+    border-right: 2px solid #c3c3c3;
+}
+
+.tableBookDetails .detailRateBtn {
+    background-color: #0084ff;
+    margin: 0.4rem 0.8rem 0.4rem 0;
+    color: #fff;
+    padding: 0 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    border-radius: 12px;
+}
+
+.tableBookDetails .detailRateBtn i {
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}
+
+.actionBtns {
+    position: relative;
+}
+
+.freeBtn {
+    padding: 0.3rem 0.66rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7a3a;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    opacity: 0;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.freeBtn:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.freeBtnFake {
+    padding: 0.3rem 0.9rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7a3a;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
 }
