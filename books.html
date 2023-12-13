@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMagz | Books</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cursor.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome 5 -->
+    <link rel='stylesheet' href='https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css'>
+    <link rel="stylesheet" href="./assets/plugins/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+    <!-- Datatable -->
+    <link rel="stylesheet" href="./assets/plugins/DataTablesPlugin/datatables.min.css">
+</head>
+
+<body>
+    <!-- <div class="loader" id="loader"></div> -->
+
+    <!-- Navigation Bar -->
+    <nav class="contain-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="navArea">
+                    <div class="container d-flex">
+                        <div class="logoArea"></div>
+                        <div class="ms-auto navBtns d-flex align-middle">
+                            <button class="navButtons" onclick="changePage('home')">Home</button>
+                            <button class="navButtons" onclick="changePage('magazine')">Magazines</button>
+                            <button class="navButtons activeTab">Books</button>
+                            <button class="navButtons" onclick="changePage('notes')">Notes</button>
+                            <button class="navButtons" onclick="changePage('contact')">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-9">
+                <div class="magazineTable mt-3">
+                    <table class="table" id="myTable">
+                        <thead>
+                            <tr>
+                                <th class="p-1"></th>
+                                <th class="p-1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="colorOne">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_1.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>Wildlife Magazine - December 2023 </h1>
+                                    <h2>BBC</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorTwo">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_2.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>India Today 18 Dec 2023</h1>
+                                    <h2>India Today</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorThree">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_1.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>The Week 17 Dec 2023</h1>
+                                    <h2>The Week</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorFour">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_2.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>Philosophy Now - December 2023 -January 2024</h1>
+                                    <h2>BBC</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorOne">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_1.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>Wildlife Magazine - December 2023 </h1>
+                                    <h2>BBC</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorTwo">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_2.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>India Today 18 Dec 2023</h1>
+                                    <h2>India Today</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorThree">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_1.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>The Week 17 Dec 2023</h1>
+                                    <h2>The Week</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorFour">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_2.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>Philosophy Now - December 2023 -January 2024</h1>
+                                    <h2>BBC</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorOne">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_1.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>Wildlife Magazine - December 2023 </h1>
+                                    <h2>BBC</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorTwo">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_2.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>India Today 18 Dec 2023</h1>
+                                    <h2>India Today</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorThree">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_1.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>The Week 17 Dec 2023</h1>
+                                    <h2>The Week</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="colorFour">
+                                <td class="tableColOne">
+                                    <img src="./assets/images/books/book_2.jpg" alt="book1" class="tableBookImg">
+                                </td>
+                                <td class="tableBookInfo">
+                                    <h1>Philosophy Now - December 2023 -January 2024</h1>
+                                    <h2>BBC</h2>
+                                    <div class="tableBookTags">
+                                        <div class="tagbtn wildlife">Wildlife</div>
+                                        <div class="tagbtn fashion">Fashion</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery-3.6.4.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Datatable -->
+    <script src="./assets/plugins/DataTablesPlugin/datatables.min.js"></script>
+
+    <!-- JS for Loader -->
+    <!-- <script type="text/javascript">
+        $(window).on("load", function () {
+            $(".loader").delay(0).fadeOut(100);
+        });
+    </script> -->
+
+    <script>
+        function changePage(pageName) {
+            const pageMapping = {
+                'home': 'index.html',
+                'magazine': 'magazine.html',
+                'books': 'books.html',
+                'notes': 'notes.html',
+                'contact': 'contact.html'
+            };
+            const pageURL = pageMapping[pageName];
+            window.location.href = pageURL;
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myTable").DataTable({
+                "responsive": false,
+                "autoWidth": false,
+                "scrollX": true,
+                // "paging": false,
+                "lengthChange": false,
+                "ordering": false,
+                // "info": false,
+            });
+        });
+    </script>
+</body>
+
+</html>

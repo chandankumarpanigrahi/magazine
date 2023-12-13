@@ -69,7 +69,7 @@ nav {
 .carousel-container {
     overflow: hidden;
     width: 100vw;
-    height: 300px;
+    height: 600px;
     position: relative;
     box-shadow: 0 0 30px -20px #223344;
     margin: auto;
@@ -95,8 +95,8 @@ nav {
   } */
 
 /* Next & previous buttons */
-.prev,
-.next {
+.imageScroller .prev,
+.imageScroller .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -112,18 +112,18 @@ nav {
     user-select: none;
 }
 
-.next {
+.imageScroller .next {
     right: 0;
     border-radius: 8px 0 0 8px;
 }
 
-.prev:hover,
-.next:hover {
+.imageScroller .prev:hover,
+.imageScroller .next:hover {
     background-color: rgba(173, 216, 230, 0.3);
 }
 
 /* Caption text */
-.text {
+.imageScroller .text {
     color: #f2f2f2;
     background-color: rgba(10, 10, 20, 0.1);
     backdrop-filter: blur(6px);
@@ -138,7 +138,7 @@ nav {
 }
 
 /* Number text (1/3 etc) */
-.number {
+.imageScroller .number {
     color: #f2f2f2;
     font-size: 16px;
     background-color: rgba(173, 216, 230, 0.15);
@@ -150,7 +150,7 @@ nav {
     left: 10px;
 }
 
-.dots-container {
+.imageScroller .dots-container {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -158,7 +158,7 @@ nav {
 }
 
 /* The dots/bullets/indicators */
-.dots {
+.imageScroller .dots {
     cursor: pointer;
     height: 14px;
     width: 14px;
@@ -170,13 +170,13 @@ nav {
     transition: background-color 0.3s ease;
 }
 
-.active,
-.dots:hover {
+.imageScroller .active,
+.imageScroller .dots:hover {
     background-color: rgba(173, 216, 230, 0.8);
 }
 
 /* transition animation */
-.animate {
+.imageScroller .animate {
     -webkit-animation-name: animate;
     -webkit-animation-duration: 1s;
     animation-name: animate;
@@ -212,6 +212,7 @@ nav {
 .bookShow.three {
     background: linear-gradient(180deg, #21466b 16%, #397cbf 35%, #d7ebff 80%, #c1dffc 99%);
 }
+
 .bookShow.four {
     background: linear-gradient(180deg, #979024 16%, #c1b94e 35%, #fffbb3 80%, #f0e771 99%);
 }
@@ -226,7 +227,7 @@ nav {
     position: relative;
 }
 
-.readFull{
+.readFull {
     position: absolute;
     inset: 0;
     background-color: #000000a6;
@@ -242,7 +243,7 @@ nav {
     cursor: pointer;
 }
 
-.readFull:hover{
+.readFull:hover {
     opacity: 1;
 }
 
@@ -294,4 +295,123 @@ nav {
     background-color: #a0a4ff29;
     padding: 0.1rem 0.3rem;
     border-radius: 4px;
+}
+
+/* Datatable */
+.magazineTable table tr td{
+    height: 250px;
+    padding: 0.5rem;
+}
+
+.magazineTable table tr td:first-child{
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    border-radius: 14px 0 0 14px;
+}
+
+.magazineTable table tr td:last-child{
+    margin: 0.5rem 0.5rem 0.5rem 0;
+    border-radius:0 14px 14px 0;
+}
+
+.magazineTable table tbody{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+.magazineTable table tbody tr{
+    width: 50%;
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.magazineTable table .colorOne td{
+    background: linear-gradient(180deg, rgba(224,255,237,1) 24%, rgba(175,255,209,1) 74%);
+}
+
+.magazineTable table .colorTwo td{
+    background: linear-gradient(180deg, rgba(255,237,237,1) 24%, rgba(255,195,195,1) 74%);
+}
+
+.magazineTable table .colorThree td{
+    background: linear-gradient(180deg, rgba(235,245,255,1) 24%, rgba(209,231,254,1) 74%);
+}
+
+.magazineTable table .colorFour td{
+    background: linear-gradient(180deg, rgba(255,253,225,1) 24%, rgba(254,249,187,1) 74%);
+}
+
+.magazineTable .dataTables_info {
+    position: absolute;
+    top: -10px; 
+    left: 10px;
+    color: #24324c;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.magazineTable .dataTables_scrollBody{
+    border-left: 0 !important;
+}
+
+.tableColOne {
+    height: 240px;
+}
+
+.tableBookImg {
+    width: 180px;
+    border-radius: 8px;
+}
+
+.tableBookInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableBookInfo h1 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+}
+
+.colorOne  .tableBookInfo h1 {
+    color: #0f8542;
+}
+
+.colorTwo  .tableBookInfo h1 {
+    color: #a81e1e;
+}
+
+.colorThree  .tableBookInfo h1 {
+    color: #1e65ae;
+}
+
+.colorFour  .tableBookInfo h1 {
+    color: #777000;
+}
+
+.tableBookInfo h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tableBookTags {
+    display: flex;
+}
+
+.tableBookTags .tagbtn {
+    color: #5151ab;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 0.6rem;
+    background-color: #a0a4ff29;
+    padding: 0.1rem 0.6rem;
+    border-radius: 4px;
+    cursor: default;
 }
