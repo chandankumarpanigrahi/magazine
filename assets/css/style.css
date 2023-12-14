@@ -312,6 +312,10 @@ nav {
     margin: 0.5rem 0.5rem 0.5rem 0;
     border-radius: 0 14px 14px 0;
     width: 100%;
+    overflow: hidden scroll;
+}
+.magazineTable table tr td:last-child::-webkit-scrollbar {
+    width: 0px;
 }
 
 .magazineTable table tbody {
