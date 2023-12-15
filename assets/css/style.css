@@ -4,6 +4,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     position: relative;
+    background-color: #410000 !important;
 }
 
 ::-moz-selection {
@@ -297,15 +298,75 @@ nav {
     border-radius: 4px;
 }
 
-/* Datatable */
+/* ------------------------ Books Page ----------------------- */
+.designBtn {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 0.5rem;
+    background: #ffffff;
+    color: #d43131;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.designBtn span {
+    position: relative;
+    z-index: 1;
+}
+
+.designBtn::before {
+    content: "";
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    background: #ff7a3a;
+    transition: width 0.5s, height 0.5s;
+}
+
+.designBtn:hover {
+    color: #fff
+}
+
+.designBtn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ======================== Datatable ======================== */
 .magazineTable table tr td {
     height: 250px;
     padding: 0.5rem;
 }
 
+.magazineTable table thead tr th {
+    background-color: transparent;
+    border: 0;
+}
+
+.magazineTable .dataTables_filter label {
+    color: #FFCDCC;
+}
+
 .magazineTable table tr td:first-child {
     margin: 0.5rem 0 0.5rem 0.5rem;
     border-radius: 14px 0 0 14px;
+}
+
+.dataTables_empty {
+    background: transparent !important;
+    border: 0;
+    color: #fff !important;
 }
 
 .magazineTable table tr td:last-child {
@@ -314,6 +375,7 @@ nav {
     width: 100%;
     overflow: hidden scroll;
 }
+
 .magazineTable table tr td:last-child::-webkit-scrollbar {
     width: 0px;
 }
@@ -372,7 +434,7 @@ nav {
     position: absolute;
     top: -10px;
     left: 10px;
-    color: #24324c;
+    color: #FFCDCC;
     font-weight: 500;
     font-size: 1.1rem;
 }
