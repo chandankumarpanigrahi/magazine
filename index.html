@@ -14,9 +14,10 @@
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
     <!-- FontAwesome 5 -->
-    <link rel='stylesheet' href='https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
     <link rel="stylesheet" href="./assets/plugins/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
     </nav>
 
     <!-- Image Slider -->
-    <div class="imageScroller">
+    <!-- <div class="imageScroller">
         <div class="carousel-container">
             <div class="mySlides animate">
                 <img src="./assets/images/banner1.jpg" alt="slide" />
@@ -70,12 +71,70 @@
                 <span class="dots" onclick="currentSlide(5)"></span>
             </div>
         </div>
+    </div> -->
+
+    <div class="opttn">
+        <main>
+            <div class="content">
+                <h2>Welcome to Online Book Store</h2>
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quam magnam obcaecati error
+                    consequatur repellat fugiat, deleniti nisi eum voluptates.</p>
+                <ul class="counter">
+                    <li>
+                        <h3><i class="fa-solid fa-book"></i>68+k</h3>
+                        <span>book collections</span>
+                    </li>
+                    <li>
+                        <h3><i class="fa-solid fa-user"></i>25,634</h3>
+                        <span>customers</span>
+                    </li>
+                </ul>
+                <button class="btn">Go to Collections <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide--one">
+                            <span>bestseller</span>
+                            <div class="slide-content">
+                                <h3>The Raven</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--two">
+                            <span>bestseller</span>
+                            <div class="slide-content">
+                                <h3>Mademoiselle</h3>
+                                <p>epic drama</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide--three">
+                            <span>bestseller</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide--four">
+                            <span>bestseller</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide--five">
+                            <span>bestseller</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide--six">
+                            <span>bestseller</span>
+                            <div class="slide-content">
+                                <h3>Woman in the dark</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="circle"></div>
+        </main>
     </div>
 
-    
+
     <script src="./assets/js/jquery-3.6.4.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
 
     <!-- JS for Loader -->
     <!-- <script type="text/javascript">
@@ -99,6 +158,50 @@
                 console.error(`Page URL for ${pageName} is not defined.`);
             }
         }
+    </script>
+
+
+    <script>
+
+        var swiper = new Swiper(".swiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            spaceBetween: 30,
+            centeredSlides: false,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 0,
+                modifier: 1,
+                slideShadows: false
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            keyboard: {
+                enabled: true
+            },
+            mousewheel: {
+                thresholdDelta: 70
+            },
+            breakpoints: {
+                460: {
+                    slidesPerView: 3
+                },
+                768: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 3
+                },
+                1600: {
+                    slidesPerView: 3.6
+                }
+            }
+        });
+
     </script>
 </body>
 
